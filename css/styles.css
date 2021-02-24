@@ -1,0 +1,162 @@
+:root {
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --active-color: #2196f3;
+}
+
+.link {
+  text-decoration: none; /* убираем подчеркивание ссылок */
+}
+
+.list {
+  list-style-type: none; /* убираем маркеры */
+}
+
+body {
+  font-family: "Roboto", sans-serif; /* задаем основной шрифт */
+}
+
+address {
+  font-style: normal; /* убираем курсив */
+}
+
+/* ============ LOGO ============ */
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--active-color);
+  letter-spacing: 0.03em;
+}
+
+.logo-header {
+  color: #000000;
+}
+
+.logo-footer {
+  /* color: #ffffff; - временно не применяем цвет для наглядности*/
+}
+
+/* ============ NAV ============ */
+
+.menu {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.menu-item-link {
+  color: var(--main-color);
+}
+
+.menu-item-link:hover,
+.menu-item-link:focus {
+  color: var(--active-color);
+}
+
+.menu-active-item {
+  color: var(--active-color);
+}
+
+/* ============ HEADER CONTACTS ============ */
+.header-contacts-link {
+  color: var(--secondary-color);
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--active-color);
+}
+
+/* ============ ШАПКА ============ */
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-motto {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: var(--active-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+  cursor: pointer;
+}
+
+/* ============ ОСОБЕННОСТИ ============ */
+.features-header {
+  display: none;
+}
+
+.features-list-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.features-list-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+/* ============ ЧЕМ МЫ ЗАНИМАЕМСЯ ============ */
+.section-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+/* ============ НАША КОМАНДА ============ */
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-item-name {
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.19
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--main-color);
+}
+
+.team-item-position {
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--secondary-color);
+}
