@@ -1,7 +1,10 @@
 :root {
   --main-color: #212121;
   --secondary-color: #757575;
+  --third-color: #fff;
   --active-color: #2196f3;
+  --dark-bg-color: #2f303a;
+  --light-bg-color: #f5f4fa;
 }
 
 .link {
@@ -16,8 +19,8 @@ body {
   font-family: "Roboto", sans-serif; /* задаем основной шрифт */
 }
 
-address {
-  font-style: normal; /* убираем курсив */
+.hidden-header {
+  display: none; /* скрываем ненужные заголовки */
 }
 
 /* ============ LOGO ============ */
@@ -34,12 +37,7 @@ address {
   color: #000000;
 }
 
-.logo-footer {
-  /* color: #ffffff; - временно не применяем цвет для наглядности*/
-}
-
 /* ============ NAV ============ */
-
 .menu {
   font-weight: 500;
   font-size: 14px;
@@ -72,7 +70,7 @@ address {
 
 /* ============ ШАПКА ============ */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--dark-bg-color);
 }
 
 .hero-motto {
@@ -82,18 +80,19 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--third-color);
 }
 
 .hero-button {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background: var(--active-color);
+  color: var(--third-color);
+  background-color: var(--active-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   width: 200px;
@@ -107,10 +106,6 @@ address {
 }
 
 /* ============ ОСОБЕННОСТИ ============ */
-.features-header {
-  display: none;
-}
-
 .features-list-header {
   font-weight: 700;
   font-size: 14px;
@@ -140,23 +135,91 @@ address {
 
 /* ============ НАША КОМАНДА ============ */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--light-bg-color);
 }
 
 .team-item-name {
-    font-weight: 500;
-font-size: 16px;
-line-height: 1.19
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--main-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
 }
 
 .team-item-position {
-    font-weight: 400;
-font-size: 16px;
-line-height: 1.19;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+/* ============ FOOTER ============ */
+footer {
+  background-color: var(--dark-bg-color);
+}
+
+.logo-footer {
+  color: var(--third-color);
+}
+
+address {
+  font-style: normal; /* убираем курсив */
+}
+
+.footer-contacts-address,
+.footer-contacts-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-contacts-address {
+  color: var(--third-color);
+}
+
+.footer-contacts-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ============ PORTFOLIO ============ */
+
+.filters-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  border-width: 0;
+}
+
+.filters-button:hover,
+.filters-button:focus {
+  color: var(--third-color);
+  background-color: var(--active-color);
+}
+
+.project-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+
+.filter-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
 }
