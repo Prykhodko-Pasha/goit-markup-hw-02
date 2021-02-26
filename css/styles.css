@@ -116,7 +116,6 @@ body {
 }
 
 .features-list-description {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -148,7 +147,6 @@ body {
 }
 
 .team-item-position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -171,7 +169,6 @@ address {
 
 .footer-contacts-address,
 .footer-contacts-link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -217,7 +214,6 @@ address {
 }
 
 .filter-item {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
